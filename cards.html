@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards de Disciplinas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-controls">
+            <h1>Disciplinas Ofertadas</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Alternar modo escuro">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        
+        <div class="search-filter-section">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar disciplinas...">
+            </div>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="programacao">Programação</button>
+                <button class="filter-btn" data-filter="matematica">Matemática</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+            </div>
+        </div>
+        
+        <div class="cards-grid">
+        <!-- Card da disciplina -->
+        <div class="card" data-category="web" data-tecnologias="HTML CSS JavaScript GitHub VS Code">
+            <!-- Título do Card -->
+            <div class="card-header">
+                <h2>Web Design</h2>
+                <p class="professores">Prof. Danielle Freitas e Prof. Leonardo Minora</p>
+            </div>
+            
+            <!-- Conteúdo do Card -->
+            <div class="card-content">
+                <h3>Objetivo</h3>
+                <p>Capacitar os alunos no desenvolvimento de interfaces web modernas e responsivas, utilizando as principais tecnologias e boas práticas de desenvolvimento front-end.</p>
+                
+                <h3>Carga Horária</h3>
+                <p>80 horas</p>
+                
+                <h3>Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-github"></i> GitHub</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                </ul>
+                
+                <h3>Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Controle de versão de código</li>
+                    <li>Design de interfaces</li>
+                </ul>
+            </div>
+            
+            <!-- Rodapé do Card -->
+            <div class="card-footer">
+                <h3>Horários e Locais</h3>
+                <p><strong>Segunda-feira:</strong> 14h00 às 18h00 - Laboratório 6</p>
+                <p><strong>Terça-feira:</strong> 14h00 às 18h00 - Laboratório 6</p>
+            </div>
+        </div>
+        <div class="card" data-category="matematica" data-tecnologias="Classroom">
+            <!-- Título do Card -->
+            <div class="card-header">
+                <h2>Matemática Discreta</h2>
+                <p class="professores">Prof. Leonardo Reis Lucena</p>
+            </div>
+            
+            <!-- Conteúdo do Card -->
+            <div class="card-content">
+                <h3>Objetivo</h3>
+                <p>Desenvolver o raciocínio abstrato e o domínio de técnicas úteis para a modelagem e construção de programas e desenvolver o raciocínio analítico e a habilidade de elaborar sentenças logicamente precisas.</p>
+                
+                <h3>Carga Horária</h3>
+                <p>60 horas</p>
+                
+                <h3>Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li><i class="fab fa-google"></i> Classroom</li>
+                </ul>
+                
+                <h3>Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Tecnicas de demonstração</li>
+                    <li>Conjuntos e Funções</li>
+                    <li>Relações</li>
+                </ul>
+            </div>
+            
+            <!-- Rodapé do Card -->
+            <div class="card-footer">
+                <h3>Horários e Locais</h3>
+                <p><strong>Quarta-feira:</strong> 16:30 às 18h00 - Audiovisual 01</p>
+                <p><strong>Quinta-feira:</strong> 16h30 às 18h00 - Audiovisual 05</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="hardware" data-tecnologias="Classroom">
+            <!-- Título do Card -->
+            <div class="card-header">
+                <h2>Sistemas Digitais</h2>
+                <p class="professores">Prof. Eduardo Braulio Wanderley Netto</p>
+            </div>
+            
+            <!-- Conteúdo do Card -->
+            <div class="card-content">
+                <h3>Objetivo</h3>
+                <p>Aplicar os conceitos de lógica na análise de circuitos digitais Projetar circuitos digitais no nível de abstração lógicoOtimizar circuitos digitai</p>
+                
+                <h3>Carga Horária</h3>
+                <p>60 horas</p>
+                
+                <h3>Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li><i class="fab fa-google"></i> Classroom</li>
+                </ul>
+                
+                <h3>Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Aplicar os conceitos de lógica na análise de circuitos digitais</li>
+                    <li>Projetar circuitos digitais no nível de abstração lógico</li>
+                    <li>Otimizar circuitos digitais</li>
+                </ul>
+            </div>
+            
+            <!-- Rodapé do Card -->
+            <div class="card-footer">
+                <h3>Horários e Locais</h3>
+                <p><strong>Quarta-feira:</strong> 13:00 às 14h30 - Audiovisual 01</p>
+                <p><strong>Quinta-feira:</strong> 16h30 às 18h00 - AAudiovisual 01</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="programacao" data-tecnologias="Python VS Code Classroom Codeforces">
+            <!-- Título do Card -->
+            <div class="card-header">
+                <h2>Programação de Computadores</h2>
+                <p class="professores">Prof. Jorgiano Marcio Bruno Vidal</p>
+            </div>
+            
+            <!-- Conteúdo do Card -->
+            <div class="card-content">
+                <h3>Objetivo</h3>
+                <p>Compreender os conceitos de implementação de algoritmos em linguagem de programação.Desenvolver programas de computadores simples, em uma linguagem de programação, como forma de automatização desolução de problema.</p>
+                
+                <h3>Carga Horária</h3>
+                <p>60 horas</p>
+                
+                <h3>Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                    <li><i class="fab fa-google"></i> Classroom</li>
+                    <li><i class="fas fa-trophy"></i> Codeforces</li>
+                </ul>
+                
+                <h3>Conceitos</h3>
+                <ul class="conceitos">
+                    <li>Conceitos básico</li>
+                    <li>Modelo de dados</li>
+                    <li>Atribuição e expressões</li>
+                    <li>Comandos básicos de entrada e saída</li>
+                    <li>Bloco de comandos</li>
+                    <li>Estruturas de controle de fluxo condicionais </li>
+                </ul>
+            </div>
+            
+            <!-- Rodapé do Card -->
+            <div class="card-footer">
+                <h3>Horários e Locais</h3>
+                <p><strong>Quarta-feira:</strong> 13:00 às 14h30 - Audiovisual 01</p>
+                <p><strong>Quinta-feira:</strong> 16h30 às 18h00 - AAudiovisual 01</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="cards.js"></script>
+</body>
+</html>
